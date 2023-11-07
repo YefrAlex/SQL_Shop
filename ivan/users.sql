@@ -7,6 +7,6 @@ CREATE TABLE `categories` (
    `fullname` VARCHAR(32),
    `email` VARCHAR(32),
    `country` VARCHAR(32),
-   `balance` INT,
+   `balance` INT DEFAULT 0,
    `is_blocked` BOOLEAN DEFAULT FALSE
 )
