@@ -4,6 +4,6 @@ CREATE DATABASE IF NOT EXISTS Users(
         fullname varchar(32),
         email varchar(32)
         country varchar(32),
-        bakance float,
+        balance float,
         is_blocked bool
 )
