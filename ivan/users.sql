@@ -2,11 +2,11 @@ CREATE DATABASE IF NOT EXISTS `shop`;
 USE `shop`;
 
 CREATE TABLE `users` (
-   `id` INT NOT NULL PRIMARY KEY,
+   `id` INT PRIMARY KEY UNIQUE AUTO_INCREMENT,
    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-   `fullname` VARCHAR(32) NOT NULL,
-   `email` VARCHAR(32) NOT NULL,
+   `fullname` VARCHAR(32) NOT NULL ,
+   `email` VARCHAR(32) NOT NULL UNIQUE,
    `country` VARCHAR(32),
-   `balance` INT NOT NULL DEFAULT 0,
+   `balance` FLOAT DEFAULT 0,
    `is_blocked` BOOLEAN DEFAULT FALSE
 )
