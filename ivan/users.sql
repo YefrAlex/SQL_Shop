@@ -7,6 +7,6 @@ CREATE TABLE `users` (
    `fullname` VARCHAR(32) NOT NULL,
    `email` VARCHAR(32) NOT NULL,
    `country` VARCHAR(32),
-   `balance` NOT NULL INT DEFAULT 0,
+   `balance` INT NOT NULL DEFAULT 0,
    `is_blocked` BOOLEAN DEFAULT FALSE
 )
