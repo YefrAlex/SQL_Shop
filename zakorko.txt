@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS Users(
+		id int,
+        created_at timestamp,
+        fullname varchar(32),
+        email varchar(32)
+        country varchar(32),
+        bakance float,
+        is_blocked bool
+)
