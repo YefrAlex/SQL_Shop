@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS `shop`;
 USE `shop`;
 
-CREATE TABLE `categories` (
+CREATE TABLE `users` (
    `id` INT NOT NULL PRIMARY KEY,
    `created_at` DEFAULT CURRENT_TIMESTAMP,
    `fullname` VARCHAR(32) NOT NULL,
